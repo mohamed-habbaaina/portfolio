@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/cv.jpg" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Apprenti Développeur Web - En Reconversion</p>
+                <h1>Hello, Je suis <span>Mohamed</span> de Marseille</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/cv.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ut quisquam ab sapiente voluptatum ipsam sit nostrum adipisci  deleniti velit minus necessitatibus excepturi quas! Explicabo ipsum qui culpa cum exercitationem. Quisquam numquam aperiam doloremque porro ut perspiciatis consequuntur dolor odio delectus voluptate nesciunt labore architecto, vitae eius nam, similique maiores soluta, minima ducimus! Error, repellat nulla quam perferendis minima consequuntur quidem id blanditiis laborum voluptates architecto, dignissimos nobis numquam veniam esse nesciunt! Fugit, consectetur.</p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SOFT Skills</p>
+                        <p class="tab-links" onclick="opentab('technical')">TECHNICAL Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('formation')">formation</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AUTONOMIE</span><br>Capacité à ...</li>
+                            <li><span>TRAVAIL EN ÉQUIPE</span><br>Capacité à ...</li>
+                            <li><span>POLYVALENT</span><br>Capacité à ...</li>
+                            <li><span>RIGOUREUX & ORGANISÉ</span><br>Capacité à ...</li>
+                            <li><span>PROBLEM SOLVING</span><br>Capacité à ...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical">
+                        <ul>
+                            <li><a href=""><span>AUTONOMIE</span></a></li>
+                            <li><a href=""><span>AUTONOMIE</span></a></li>
+                            <li><a href=""><span>AUTONOMIE</span></a></li>
+                            <li><a href=""><span>AUTONOMIE</span></a></li>
+                            <li><a href=""><span>AUTONOMIE</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AUTONOMIE</span><br>Capacité à ...</li>
+                            <li><span>TRAVAIL EN ÉQUIPE</span><br>Capacité à ...</li>
+                            <li><span>POLYVALENT</span><br>Capacité à ...</li>
+                            <li><span>RIGOUREUX & ORGANISÉ</span><br>Capacité à ...</li>
+                            <li><span>PROBLEM SOLVING</span><br>Capacité à ...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="formation">
+                        <ul>
+                            <li><span>AUTONOMIE</span><br>Capacité à ...</li>
+                            <li><span>TRAVAIL EN ÉQUIPE</span><br>Capacité à ...</li>
+                            <li><span>POLYVALENT</span><br>Capacité à ...</li>
+                            <li><span>RIGOUREUX & ORGANISÉ</span><br>Capacité à ...</li>
+                            <li><span>PROBLEM SOLVING</span><br>Capacité à ...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
