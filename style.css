@@ -225,6 +225,14 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+.a-link{
+    text-decoration-line: none;
+    color: white;
+}
+.a-link span{
+    padding-left: 20px;
+    font-weight: bold;
+}
 /* media screen */
 nav .fas{
     display: none;
