@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./portfolio/css/style.css">
+    <script src="./portfolio/app.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="img/cv.jpg" alt="logo" class="logo">
+                <img src="./portfolio/img/cv.jpg" alt="logo" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Projets</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <img class="fas" src="img/x.png" onclick="closemenu()">
+                    <img class="fas" src="./portfolio/img/x.png" onclick="closemenu()">
                 </ul>
-                <img class="fas" src="img/berger.png" onclick="openmenu()">
+                <img class="fas" src="./portfolio/img/berger.png" onclick="openmenu()">
             </nav>
             <div class="header-text">
-                <p>Développeur Web Junior - En Reconversion</p>
+                <p>Développeur Web Junior<br>- En Recherche d'Alternance</p>
                 <h1>Hello,<br>Je suis <span>Mohamed</span></h1>
             </div>
         </div>
     </div>
     <!-- about -->
     <div id="about">
+
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="img/programmation-php.jpg" alt="">
+                    <img src="./portfolio/img/programmation-php.jpg" alt="">
                 </div>
+                
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>Je suis actuellement en reconversion professionnelle et je souhaiterais intégrer une alternance dans le domaine du développement web. Mon background en management des organisations m'a permis de développer des compétences en gestion de projet, en communication et en résolution de problèmes, compétences qui seront utiles dans le développement web. Je suis passionné par les nouvelles technologies et je suis convaincu que le développement web est un domaine en constante évolution qui offre de nombreuses opportunités.</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Féru de nouvelles technologies. Mon background en management des organisations m'a permis de développer des compétences en gestion de projet, communication et résolution de problèmes, compétences qui seront utiles dans le développement web, et que j'aurai plaisir à mettre au service de votre entreprise.</p>
                     <div class="tab-titels">
                         <p class="tab-links active-link" onclick="opentab('skills')">SOFT Skills</p>
                         <p class="tab-links" onclick="opentab('technical')">TECHNICAL Skills</p>
@@ -53,11 +57,11 @@
                     </div>
                     <div class="tab-contents" id="technical">
                         <ul>
-                            <li style="width: 80%;"><img src="img/5968267.png" id="img-prog"><img src="img/css.png" id="img-prog"><img src="img/php.png" id="img-prog"><img src="img/sql.png" id="img-prog"><img src="img/trello.png" id="img-prog"></li>
+                            <li style="width: 80%;"><img src="./portfolio/img/5968267.png" id="img-prog"><img src="./portfolio/img/css.png" id="img-prog"><img src="./portfolio/img/php.png" id="img-prog"><img src="./portfolio/img/sql.png" id="img-prog"><img src="./portfolio/img/trello.png" id="img-prog"></li>
                             <li><span>ENVIRONNEMENT</li>
-                            <li><img src="img/ubuntu.png" id="img-prog"><img src="img/Vimlogo.svg.png" id="img-prog"><img src="img/github.png" id="img-prog"><img src="img/vscode.png" id="img-prog"></li>
+                            <li><img src="./portfolio/img/ubuntu.png" id="img-prog"><img src="./portfolio/img/Vimlogo.svg.png" id="img-prog"><img src="./portfolio/img/github.png" id="img-prog"><img src="./portfolio/img/vscode.png" id="img-prog"></li>
                             <li><span>En Cours De Progression</span></li>
-                            <li><img src="img/js.png" id="img-prog"><img src="img/react.png" id="img-prog"></li>
+                            <li><img src="./portfolio/img/js.png" id="img-prog"><img src="./portfolio/img/react.png" id="img-prog"></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -79,98 +83,74 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
 
         </div>
+
     </div>
+
     <!-- projets -->
     <div id="portfolio">
+
         <div class="container">
             <h1 class="sub-title">Mes Projets</h1>
             <div class="work-list">
+
                 <div class="work">
-                    <a href="https://mohamed-habbaaina.students-laplateforme.io/livre-or"><img src="img/home.webp"></a>
+                    <a href="https://mohamed-habbaaina.students-laplateforme.io/livre-or-js"><img src="./portfolio/img/fidmarseille.jpeg" alt="fidMarseille"></a>
                     <div class="layer">
                         <h3>Livre d'Or</h3>
-                        <p>Création d'un livre d’or permettant à nos invitées de laisser leurs commentaires sûr l'anniversaire de ma fille</p>
+                        <p>Creation of a <b>Guestbook</b> for <b>The FIDMarseille</b>, International Film Festival of Marseille <b>04-09 July 2023</b>, allowing guests to leave their comments about the event.<br>
+                            <u>Techno</u>: <b>HTML, CSS, PHP, JavaScript, Api Rest</b>.
+                        </p>
                     </div>
                 </div>
+
                 <div class="work">
-                    <a href="https://mohamed-habbaaina.students-laplateforme.io/reservation_salles"><img src="img/a.jpg"></a>
+                    <a href="https://mohamed-habbaaina.students-laplateforme.io/oclock/"><img src="./portfolio/img/oclock.png"></a>
+                    <div class="layer">
+                        <h3>O'clock</h3>
+                        <p>Creation of an <b>Clock</b> & <b>Stopwatch</b> & <b>Alarm</b>,<br><u>Techno</u>: <b>JavaScript CSS HTML</b></p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <a href="https://mohamed-habbaaina.students-laplateforme.io/reservation_salles"><img src="./portfolio/img/a.jpg"></a>
                     <div class="layer">
                         <h3>Réservation de Salles</h3>
-                        <p>Création d'un site qui permet aux utilisateurs de réserver une salle pour un événement</p>
+                        <p>Creation of a system that allows users to reserve a room for an event.<br><u>Techno</u>: <b>PHP, JavaScript, HTML, CSS</b>.</p>
                     </div>
                 </div>
-                <div class="work">
-                    <a href="https://mohamed-habbaaina.students-laplateforme.io/module-connexion"><img style="height: 81%;" src="img/module.jpg"></a>
-                    <div class="layer">
-                        <h3>Module De Connexion</h3>
-                        <p>Module de Connexion permettant aux utilisateurs de créer leur compte, de se connecter et de modifier leurs informations.</p>
-                    </div>
-                </div>
+
             </div>
-            <a href="#" class="btn">Voir  Plus</a>
+            <a href="./portfolio/includes/projects.html" class="btn">Voir  Plus</a>
         </div>
+
     </div>
+
     <!-- contact -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contactez-Moi</h1>
-                    <p><img style="width: 30px;" src="img/email.png">  mohamed.habbaaina@laplateforme.io</p>
-                    <p><img style="width: 30px;" src="img/phon.png">  +33675813132</p>
-                    <p><a class="a-link" href="https://www.linkedin.com/in/mohamed-habbaaina-62618725a/"><img style="width: 30px;" src="img/linkedin.png"><span>Linkdin</span></a></p>
-                    <p><a class="a-link" href="https://github.com/mohamed-habbaaina"><img style="width: 30px;" src="img/git.png"><span>GitHub</span></a></p>
-                    <a href="img/mohamed-habbaaina_cv.pdf" download class="btn btn2">Dowload CV</a>
+                    <p><img style="width: 30px;" src="./portfolio/img/email.png">  mohamed.habbaaina@laplateforme.io</p>
+                    <p><img style="width: 30px;" src="./portfolio/img/phon.png">  +33675813132</p>
+                    <p><a class="a-link" href="https://www.linkedin.com/in/mohamed-habbaaina-62618725a/"><img style="width: 30px;" src="./portfolio/img/linkedin.png"><span>Linkdin</span></a></p>
+                    <p><a class="a-link" href="https://github.com/mohamed-habbaaina"><img style="width: 30px;" src="./portfolio/img/git.png"><span>GitHub</span></a></p>
+                    <a href="./portfolio/img/mohamed-habbaaina_cv.pdf" download class="btn btn2">Dowload CV</a>
                 </div>
                 <div class="contact-right">
-                    <form method="post" name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Votre Nom" required>
-                        <input type="email" name="Email" placeholder="Votre Email" required>
-                        <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
-                        <button type="submit" class="btn btn2">Envoyer</button>
+                    <form method="post" name="submit-to-google-sheet" action="./portfolio/includes/envoyer.php">
+                        <input type="text" name="nom" placeholder="Votre Nom" required>
+                        <input type="email" name="email" placeholder="Votre Email" required>
+                        <textarea name="message" rows="6" placeholder="Votre Message"></textarea>
+                        <button class="btn btn2">Envoyer</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzesMTQHmlOMdhACsIRG_yjZFY9xlHiK8SSGFA-h8tMdhsi9IORwWaXgyq5GF2ByT-l/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 </body>
 </html>
